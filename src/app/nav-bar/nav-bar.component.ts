@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './nav-bar.component.css'
 })
 export class NavBarComponent {
-  isSidebarActive = false;
+  isSidebarActive: boolean = false;
   activeSubmenus: { [key: string]: boolean } = {};
 
   toggleSidebar(): void {
@@ -14,6 +14,11 @@ export class NavBarComponent {
   }
 
   toggleSubmenu(menu: string): void {
+    for (let key in this.activeSubmenus) {
+      if (key !== menu) {
+        this.activeSubmenus[key] = false;
+      }
+    }
     this.activeSubmenus[menu] = !this.activeSubmenus[menu];
   }
 }

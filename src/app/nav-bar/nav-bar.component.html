@@ -1,51 +1,54 @@
-<header class="sticky-header" >
-    <div class="header-area-home1 header-area-home3 d-none d-lg-block">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="header-elements">
-              <div class="site-logo">
-                <a href="index1.html"><img src="../../assets/img/logo/logoMfinances.png" alt=""></a>
-              </div>
-              <div class="main-menu-ex home2-menu">
-                <ul>
-                  <li><a href="#">À propos </a>
-                  </li>
-                  <li><a href="service.html">Services<i class="fa-solid fa-angle-down"></i></a>
-                    <ul>
-                      <li><a href="service.html">Service</a></li>
+<header class="sticky-header mb-5">
+  <div class="header-area-home1 header-area-home3 d-none d-lg-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="header-elements">
+            <div class="site-logo">
+              <a href="index1.html"><img src="../../assets/img/logo/logoMfinances.png" alt="Logo"></a>
+            </div>
+            <div class="main-menu-ex home2-menu">
+              <ul>
+                <li><a href="#">À propos</a></li>
+                <li>
+                  <a href="service.html">Services <i class="fa-solid fa-angle-down"></i></a>
+                  <ul>
+                    <li><a href="service.html">Service</a></li>
                     <li><a href="service-details.html">Service Details</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="about.html">Nos Tarifs</a>
-                  </li>
-                  <li><a href="blog.html">Boostez votre entreprise <i class="fa-solid fa-angle-down"></i></a>
-                    <ul>
-                      <li><a href="blog.html">Our Blog 1</a></li>
-                      <li><a href="blog2.html">Our Blog 2</a></li>
-                      <li><a href="blog-details.html">Blog Details</a></li>
-                    </ul></li>
-                  <li><a href="blog.html">Support <i class="fa-solid fa-angle-down"></i></a>
-                    <ul>
-                      <li><a href="blog.html">Our Blog 1</a></li>
-                      <li><a href="blog2.html">Our Blog 2</a></li>
-                      <li><a href="blog-details.html">Blog Details</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <div class="header-btn d-none d-lg-block">
-                <a href="#" class=" btn-red">Nos contacts <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
+                  </ul>
+                </li>
+                <li><a href="about.html">Nos Tarifs</a></li>
+                <li>
+                  <a href="blog.html">Boostez votre entreprise <i class="fa-solid fa-angle-down"></i></a>
+                  <ul>
+                    <li><a href="blog.html">Our Blog 1</a></li>
+                    <li><a href="blog2.html">Our Blog 2</a></li>
+                    <li><a href="blog-details.html">Blog Details</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="blog.html">Support <i class="fa-solid fa-angle-down"></i></a>
+                  <ul>
+                    <li><a href="blog.html">Our Blog 1</a></li>
+                    <li><a href="blog2.html">Our Blog 2</a></li>
+                    <li><a href="blog-details.html">Blog Details</a></li>
+                  </ul>
+                </li>
+                <li><a href="about.html">Podcast</a></li>
+              </ul>
+            </div>
+            <div class="header-btn d-none d-lg-block">
+              <a href="#" class="btn-red">Nos contacts <i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </header>
+  </div>
+</header>
 
 <!-- Mobile Header -->
-<div class="mobile-header-4 d-block d-lg-none">
+<div class="mobile-header d-block d-lg-none">
   <div class="container-fluid">
     <div class="mobile-header-elements">
       <div class="mobile-logo">
@@ -53,8 +56,8 @@
           <img src="assets/img/logo/logoMfinances.png" alt="Logo">
         </a>
       </div>
-      <!-- Toggle Sidebar Button -->
-      <div class="mobile-nav-icon" (click)="toggleSidebar()" style="cursor: pointer">
+      <!-- Bouton pour ouvrir le menu latéral -->
+      <div class="mobile-nav-icon" (click)="toggleSidebar()" style="cursor: pointer;">
         <i class="fas fa-bars"></i>
       </div>
     </div>
@@ -62,43 +65,44 @@
 </div>
 
 <!-- Mobile Sidebar -->
-<div class="mobile-sidebar" [ngClass]="{'active': isSidebarActive}">
+<div class="mobile-sidebar" [ngClass]="{'mobile-menu-active': isSidebarActive}">
   <div class="menu-close" (click)="toggleSidebar()">
     <i class="fas fa-times"></i>
   </div>
   <div class="mobile-nav">
     <ul class="mobile-nav-list">
       <li><a href="#">À propos</a></li>
-      <li class="has-submenu" [ngClass]="{'active': activeSubmenus['services']}">
+      <li>
         <a href="#" (click)="toggleSubmenu('services')">
           Services <i class="fas fa-angle-down"></i>
         </a>
-        <ul class="sub-menu" *ngIf="activeSubmenus['services']">
+        <ul class="sub-menu" [ngClass]="{'open': activeSubmenus['services']}">
           <li><a href="service.html">Service</a></li>
-          <li><a href="service-details.html">Service Details</a></li>
+          <li><a href="service-details.html">Détails du Service</a></li>
         </ul>
       </li>
       <li><a href="about.html">Nos Tarifs</a></li>
-      <li class="has-submenu" [ngClass]="{'active': activeSubmenus['boost']}">
+      <li>
         <a href="#" (click)="toggleSubmenu('boost')">
           Boostez votre entreprise <i class="fas fa-angle-down"></i>
         </a>
-        <ul class="sub-menu" *ngIf="activeSubmenus['boost']">
-          <li><a href="blog.html">Boostez votre entreprise 1</a></li>
-          <li><a href="blog2.html">Boostez votre entreprise 2</a></li>
-          <li><a href="blog-details.html">Boostez votre entreprise Details</a></li>
+        <ul class="sub-menu" [ngClass]="{'open': activeSubmenus['boost']}">
+          <li><a href="blog.html">Article 1</a></li>
+          <li><a href="blog2.html">Article 2</a></li>
+          <li><a href="blog-details.html">Détails de l'Article</a></li>
         </ul>
       </li>
-      <li class="has-submenu" [ngClass]="{'active': activeSubmenus['support']}">
+      <li>
         <a href="#" (click)="toggleSubmenu('support')">
           Support <i class="fas fa-angle-down"></i>
         </a>
-        <ul class="sub-menu" *ngIf="activeSubmenus['support']">
-          <li><a href="support.html">Notre Support 1</a></li>
-          <li><a href="support2.html">Notre Support 2</a></li>
-          <li><a href="support-details.html">Support Details</a></li>
+        <ul class="sub-menu" [ngClass]="{'open': activeSubmenus['support']}">
+          <li><a href="support.html">Support 1</a></li>
+          <li><a href="support2.html">Support 2</a></li>
+          <li><a href="support-details.html">Détails du Support</a></li>
         </ul>
       </li>
+      <li><a href="about.html">Podcast</a></li>
     </ul>
     <div class="header-btn">
       <a href="#" class="btn-red">Nos contacts <i class="fas fa-arrow-right"></i></a>
@@ -107,4 +111,4 @@
 </div>
 
 <!-- Overlay -->
-<div class="overlay" *ngIf="isSidebarActive" (click)="toggleSidebar()"></div>
+<div class="overlay" [ngClass]="{'active': isSidebarActive}" (click)="toggleSidebar()"></div>

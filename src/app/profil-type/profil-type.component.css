@@ -91,28 +91,42 @@
 /* Boutons de navigation */
 .navigation-buttons {
   display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  gap: 1rem; /* Espacement entre les boutons */
+  justify-content: center; /* Centre les boutons horizontalement */
+  align-items: center; /* Centre les boutons verticalement */
+  margin-top: 32px;
 }
 
 .nav-btn {
-  width: 15px;
-  height: 15px;
-  background-color: #ff4c4c;
-  border-radius: 50%;
-  border: none;
-  margin: 0 5px;
+  border: 2px solid #25335B; /* Bordure circulaire */
+  background: none; /* Pas de fond */
+  border-radius: 50%; /* Forme circulaire */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
-  transition: transform 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-btn i {
+  color: #25335B; /* Couleur de l'icône */
+  font-size: 20px;
+}
+
+.nav-btn:hover {
+  background-color: rgba(37, 51, 91, 0.1); /* Fond léger au survol */
+  transform: scale(1.1); /* Agrandir légèrement au survol */
 }
 
 .nav-btn:disabled {
-  background-color: #ddd;
   cursor: not-allowed;
+  opacity: 0.5; /* Diminuer l'opacité pour les boutons désactivés */
 }
 
-.nav-btn:hover:not(:disabled) {
-  transform: scale(1.2);
+.nav-btn:disabled i {
+  color: rgba(37, 51, 91, 0.5); /* Couleur atténuée pour les icônes désactivées */
 }
 
 .text-red {
