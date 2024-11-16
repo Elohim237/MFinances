@@ -1,0 +1,28 @@
+.top-bar {
+  background-color: #25335B; /* Dark blue background */
+  color: white;
+  padding: 15px 0;
+}
+.top-bar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+i{
+  color: #F34947;
+}
+.top-bar .social-icons i {
+  font-size: 20px;
+
+}
+.top-bar .contact-info {
+  font-size: 14px;
+}
+@media (max-width: 767px) {
+  .top-bar {
+    text-align: center;
+  }
+  .top-bar .social-icons {
+    margin-top: 5px;
+  }
+}

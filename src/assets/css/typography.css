@@ -1,0 +1,55 @@
+/*
+============================
+Name:
+Version: 1.0.0
+Description:
+Author: Sujon mahamud
+Author URI:
+Location:
+============================
+*/
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+input, textarea, select, option, {
+  max-width: 100%;
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a,
+a:hover,
+a:focus{
+  outline: none;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  margin:0;
+}
+p{
+  margin: 0;
+}
+
+body{
+  font-family: ;
+  font-size: ;
+  font-weight: ;
+  line-height: ;
+
+}

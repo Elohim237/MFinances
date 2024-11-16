@@ -1,0 +1,39 @@
+.sticky-header {
+    z-index: 1000; /* Assurez-vous que l'en-tête reste au-dessus des autres éléments */
+    background-color: #fff; /* Conservez ou ajustez la couleur de fond */
+   ; /* Ombre légère */
+  }
+  .header-button {
+    margin-top: 32px;
+  }
+
+  .header-btn a,
+  .header-btn button {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    padding: 16px;
+    display: inline-block;
+    line-height: 16px;
+    border-radius: 24px; /* Contours arrondis */
+    transition: all 0.4s;
+    text-decoration: none;
+    border: none;
+  }
+
+  .header-btn a:hover,
+  .header-btn button:hover {
+    transform: scale(1.1);
+  }
+
+  .btn-red {
+    background-color: #F34947;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  li a {
+    font-size: 17px;
+  }

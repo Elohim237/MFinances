@@ -1,0 +1,137 @@
+.background-section {
+    background-image: url('../../assets/img/bg/bg-services.png'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+  }
+
+  /* Title and subtitle */
+  .background-section h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  .background-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  /* Custom card styling */
+  .custom-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 72, 101, 0.3);
+    position: relative;
+    min-width: 400px;
+    margin: 20px;
+    transition: transform 0.3s;
+    text-align: left;
+  }
+
+  .custom-card:hover {
+    transform: scale(1.05);
+  }
+
+  .custom-card-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #25335B;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  .custom-card h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #25335B;
+  }
+
+  .custom-card p {
+    font-size: 0.9rem;
+    color: #333;
+  }
+
+  .custom-card .btn-link {
+    color: #ff4b4b;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+  }
+
+.card {
+  border: 1px solid #006f8c;
+  border-radius: 12px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Effet au survol */
+.card:hover {
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Conteneur intérieur avec bordure */
+.inner-border {
+  border: 1px solid #25335B;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+/* Styles pour l'icône en forme de rectangle arrondi */
+.icon {
+  background-color: #EDF1F5;
+  color: #25335B;
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Styles pour le texte de la carte */
+.card-title {
+  font-weight: bold;
+  color: #006f8c;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.card-text {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style pour le lien */
+.card-link {
+  color: #ff2e2e;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+}
+
+.card-link i {
+  margin-left: 5px;
+}

@@ -1,0 +1,57 @@
+.blog-box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  margin: 20px 0;
+}
+
+.blog-box:hover {
+  transform: scale(1.05);
+}
+
+.blog-video {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.blog-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.blog-content h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #004865;
+}
+
+.blog-content h2 a {
+  color: #004865;
+  text-decoration: none;
+}
+
+.blog-content h2 a:hover {
+  color: #FF0000;
+}
+
+.blog-content p {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+
+.text-red {
+  color: #ff0000; /* Rouge vif */
+  font-style: italic;
+}
+.btn-red{
+  background-color: red;
+  width: 200px;
+}
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,29 @@
+.home2-about{
+    background-color: #25335B;
+}
+a {
+  text-decoration: none;
+}
+h1{
+  padding: 0;
+}
+h1,p,li{
+  color: #fff;
+}
+
+.expert-text {
+  font-size: 1em; /* Ajustez la taille selon vos besoins */
+}
+
+.text-red {
+  color: #F34947; /* Rouge vif */
+  font-style: italic;
+}
+
+.text-dark {
+  color: #fff; /* Noir */
+  font-style: italic;
+}
+.btn-red{
+  background-color:  #F34947;
+}

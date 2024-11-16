@@ -1,0 +1,133 @@
+/*.card{*/
+/*    width: 230px;*/
+/*}*/
+
+/*.card-body {*/
+/*    color: #004865;*/
+/*}*/
+/*.card-body h5 {*/
+/*    font-weight: 600;*/
+/*}*/
+/*.card-body{*/
+/*    background-color: #EDF1F5;*/
+/*}*/
+/*.card-body a{*/
+/*    color: #ff0000;;*/
+/*}*/
+/*.custom-shadow {*/
+/*    box-shadow: 4px 4px 0px rgba(0, 72, 101, 1);*/
+/*  }*/
+
+/* Container principal du slider */
+.slider-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slider-container h2 {
+  font-size: 24px;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+/* Slider */
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Carte individuelle */
+.card {
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 350px;
+  margin: 0 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 4px 5px 1px rgba(0, 72, 101, 1);
+  background: #EDF1F5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: left;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  margin: 0 0 10px;
+  color: #1a1a1a;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 15px;
+}
+
+.card-content .learn-more {
+  font-size: 14px;
+  color: #ff4c4c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-content .learn-more:hover {
+  color: #e04343;
+}
+
+/* Boutons de navigation */
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.nav-btn {
+  width: 15px;
+  height: 15px;
+  background-color: #ff4c4c;
+  border-radius: 50%;
+  border: none;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.nav-btn:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.nav-btn:hover:not(:disabled) {
+  transform: scale(1.2);
+}
+
+.text-red {
+  color: #ff0000; /* Rouge vif */
+  font-style: italic;
+  margin-bottom: 0px;
+}
+/* Carte en bleu */
+.card-blue {
+  box-shadow: 4px 5px 1px rgba(0, 72, 101, 1);
+  background-color: #EDF1F5;
+}
+
+/* Carte en rouge */
+.card-red {
+  box-shadow: 4px 5px 1px rgba(255, 0, 0, 1);
+  background-color: #EDF1F5;
+}

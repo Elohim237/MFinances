@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+
+.read-more-btn {
+  display: inline-block;
+  font-size: 0.9em;
+  color: #FF0000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-more-btn:hover {
+  color: #b10000;
+}
+.read-more {
+  display: flex;
+  align-items: center;
+}
+
+.read-more-link {
+  color: #ff0000; /* Couleur rouge */
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.read-more-link:hover {
+  color: #cc0000; /* Rouge légèrement plus sombre au survol */
+}
+
+.arrow-circle {
+  background-color: #f0f0f0; /* Cercle gris clair */
+  border-radius: 50%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+  transition: background-color 0.3s;
+}
+
+.arrow-circle i {
+  color: #ff0000;
+  font-size: 0.8em;
+}
+
+.read-more-link:hover .arrow-circle {
+  background-color: #e0e0e0; /* Couleur légèrement plus foncée au survol */
+}
