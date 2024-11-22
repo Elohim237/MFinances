@@ -233,3 +233,13 @@ ul.mobile-nav-list {
   visibility: visible;
   opacity: 1;
 }
+.actived {
+  color: #ff0000; 
+  font-weight: bold;
+  /* border-bottom: 2px solid #ff0000;  */
+  transition: all 0.3s ease; 
+}
+
+.actived:hover {
+  color: #ff4500;
+}

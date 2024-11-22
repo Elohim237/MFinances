@@ -12,6 +12,9 @@ import { CeoSectionComponent } from './ceo-section/ceo-section.component';
 import { PodcastAccueilComponent } from './podcast-accueil/podcast-accueil.component';
 import { ZoneContactComponent } from './zone-contact/zone-contact.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
+import { AccueilComponent } from './accueil/accueil.component';
+import { AboutComponent } from './about/about.component';
+import { HeaderAboutComponent } from './header-about/header-about.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { TopBarComponent } from './top-bar/top-bar.component';
     CeoSectionComponent,
     PodcastAccueilComponent,
     ZoneContactComponent,
-    TopBarComponent
+    TopBarComponent,
+    AccueilComponent,
+    AboutComponent,
+    HeaderAboutComponent
   ],
   imports: [
     BrowserModule,

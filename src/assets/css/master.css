@@ -530,7 +530,7 @@ ul.theme-mega-menu li.mega-menu {
   border-radius: 4px;
 }
 .main-menu-ex li li a .main-menu-ex li li a:hover {
-  background-color: #00bf71;
+  background-color: #FF3333;
   transform: rotateX(0deg);
 
   border-radius: 4px;
@@ -613,7 +613,7 @@ ul.theme-mega-menu li.mega-menu {
 }
 .main-menu-ex.home2-menu li li a:hover::after {
   transform: rotateX(0deg);
-  background-color: #00bf71;
+  background-color: #FF3333;
   border-radius: 4px;
 }
 
@@ -938,10 +938,10 @@ ul.theme-mega-menu li.mega-menu {
   content: "";
   position: absolute;
   width: 100%;
-  height: 65%;
+  height: 80%;
   top: 19px;
   left: 0;
-  background-color: #fede65;
+  background-color: #00204A;
   z-index: -1;
   border-radius: 4px;
 }
@@ -1152,7 +1152,7 @@ ul.theme-mega-menu li.mega-menu {
 }
 
 .testimonial-slider .owl-nav button:hover svg {
-  background-color: #00bf71;
+  background-color: #FF3333;
   color: #fff;
 }
 
@@ -1317,16 +1317,26 @@ ul.theme-mega-menu li.mega-menu {
 .hadding h1 span::before {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 70%;
-  top: 10px;
+  width: 70%;
+  height: 100%;
+ 
   left: 0;
-  color: #0e1124;
-  background-color: #fede65;
+  background-color: #00204A;
   z-index: -1;
   border-radius: 4px;
 }
-
+.hadding h2 span::before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 100%;
+ 
+  left: 0;
+  color: #fff;
+  background-color: #F34947;
+  z-index: -1;
+  border-radius: 4px;
+}
 .preview-bottom-hadding h1 span {
   position: relative;
   color: #0e1124;
@@ -2176,7 +2186,7 @@ body {
   color: #fff;
   padding: 16px;
   display: inline-block;
-  background-color: #00bf71;
+  background-color: #FF3333;
   line-height: 16px;
   border-radius: 4px;
   transition: all.4s;
@@ -2190,7 +2200,7 @@ body {
   background-color: #fff;
   padding: 3px 4px;
   border-radius: 50%;
-  color: #00bf71;
+  color: #FF3333;
   transform: rotate(-45deg);
   margin-bottom: -2px;
   margin-left: 4px;
@@ -2202,7 +2212,7 @@ body {
   color: #fff;
   padding: 16px;
   display: inline-block;
-  background-color: #00bf71;
+  background-color: #FF3333;
   line-height: 16px;
   border-radius: 4px;
   border: none;
@@ -2217,7 +2227,7 @@ body {
   background-color: #fff;
   padding: 3px 4px;
   border-radius: 50%;
-  color: #00bf71;
+  color: #FF3333;
   transform: rotate(-45deg);
   margin-bottom: -2px;
   margin-left: 4px;
@@ -2264,7 +2274,7 @@ body {
 }
 
 .footer-shere.home2-footer-shere ul li:hover {
-  background-color: #00bf71;
+  background-color: #FF3333;
 }
 @media screen and (max-width: 768px) {
   .home2-padding-after span.after::after {
@@ -2307,7 +2317,7 @@ body {
   position: absolute;
   width: 2%;
   height: 100%;
-  background: #00bf71;
+  background: #FF3333;
   top: 0;
   border-radius: 4px;
   left: 0;
@@ -2435,7 +2445,7 @@ body {
   position: absolute;
   width: 100%;
   height: 4px;
-  background: #00bf71;
+  background: #FF3333;
   border-radius: 0px 0px 5px 5px;
   bottom: 0;
   left: 0;
@@ -2451,7 +2461,7 @@ body {
   position: absolute;
   width: 100%;
   height: 4px;
-  background: #00bf71;
+  background: #FF3333;
   border-radius: 4px;
   bottom: 0;
   left: 0;
@@ -2582,7 +2592,7 @@ body {
   position: absolute;
   width: 100%;
   height: 4px;
-  background: #00bf71;
+  background: #FF3333;
   border-radius: 4px;
   bottom: 0;
   left: 0;
@@ -2678,7 +2688,7 @@ body {
 /*======== home2-pricing-start ==========*/
 
 .toggle-inner.home2-toggle-inner {
-  background: #00bf71;
+  background: #FF3333;
 }
 .home2-pricing-box {
   padding: 32px 24px;
@@ -2721,7 +2731,7 @@ body {
   margin-top: 40px;
 }
 .home2-pricing-box:hover {
-  background-color: #00bf71;
+  background-color: #FF3333;
 }
 
 .home2-pricing-box:hover .home2-hadding-p p {
@@ -2737,16 +2747,16 @@ body {
 
 .home2-pricing-box:hover .home2-btn.home2-btn-testimonial a {
   background: #fff;
-  color: #00bf71;
+  color: #FF3333;
 }
 
 .home2-pricing-box:hover .home2-btn.home2-btn-testimonial a {
   background: #fff;
-  color: #00bf71;
+  color: #FF3333;
 }
 
 .home2-pricing-box:hover .home2-btn.home2-btn-testimonial a svg {
-  background: #00bf71;
+  background: #FF3333;
   color: #fff;
 }
 
@@ -2855,7 +2865,7 @@ body {
   transition: all.4s;
 }
 .team-shere ul li a:hover {
-  color: #00bf71;
+  color: #FF3333;
 }
 
 .team-shere {
@@ -2930,7 +2940,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #00bf71;
+  background-color: #FF3333;
   border-radius: 50%;
   z-index: -2;
   opacity: 0.2;
@@ -4481,7 +4491,7 @@ span.play-iocn svg {
 }
 
 .about-choose-box:hover {
-  background-color: #d4aeff;
+  background-color: #EDF1F5;
 }
 .hadding.about-page-hadding.hadding-p {
   padding-right: 100px;

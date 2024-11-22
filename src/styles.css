@@ -48,3 +48,11 @@
 .read-more-link:hover .arrow-circle {
   background-color: #e0e0e0; /* Couleur légèrement plus foncée au survol */
 }
+
+.text-red {
+  color: #ff0000; /* Rouge vif */
+  font-style: italic;
+}
+.btn-red{
+  background-color:  #F34947;
+}

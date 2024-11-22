@@ -1,0 +1,61 @@
+/* Header styles */
+.header {
+    background: url('../../assets/img/bg/bg_about.png') no-repeat center center/cover;
+    height: 300px; /* Adjust height for desktop */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-overlay {
+  
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align text to the left */
+    color: white;
+}
+
+.container {
+    margin-left: 20px; /* Padding for the text */
+}
+
+.container h1 {
+    margin: 0;
+    font-size: 2.5em; /* Large font for desktop */
+}
+
+.container p {
+    margin: 5px 0 0;
+    font-size: 1em;
+    opacity: 0.8;
+}
+
+/* Responsive design for tablets and phones */
+@media (max-width: 768px) {
+    .header {
+        height: 150px; /* Reduce height for tablets */
+    }
+    .container h1 {
+        font-size: 2em; /* Smaller title font */
+    }
+    .container p {
+        font-size: 0.9em; /* Smaller breadcrumb font */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        height: 120px; /* Reduce height for small phones */
+    }
+    .container {
+        margin-left: 10px; /* Adjust padding */
+    }
+    .container h1 {
+        font-size: 1.5em; /* Even smaller title font */
+    }
+    .container p {
+        font-size: 0.8em; /* Smaller breadcrumb font */
+    }
+}

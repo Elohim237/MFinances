@@ -1,0 +1,28 @@
+.btn-red{
+    background-color:  #F34947;
+  }
+a{
+    text-decoration: none;
+}  
+
+.about-choose{
+    background-color: #00204A;
+}
+
+
+.font-red {
+    background-color: #F34947;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+.haddingg h1 {
+    color: #0e1124;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    padding-bottom: 18px;
+  }
+  .hadding h1 span {
+    position: relative;
+  }

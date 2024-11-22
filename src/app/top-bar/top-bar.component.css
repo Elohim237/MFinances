@@ -26,3 +26,8 @@ i{
     margin-top: 5px;
   }
 }
+@media (max-width: 480px) {
+.top-bar{
+  display: none;
+}
+}
