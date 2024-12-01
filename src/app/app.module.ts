@@ -15,6 +15,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { AboutComponent } from './about/about.component';
 import { HeaderAboutComponent } from './header-about/header-about.component';
+import { AbslComponent } from './absl/absl.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HeaderAboutComponent } from './header-about/header-about.component';
     TopBarComponent,
     AccueilComponent,
     AboutComponent,
-    HeaderAboutComponent
+    HeaderAboutComponent,
+    AbslComponent
   ],
   imports: [
     BrowserModule,

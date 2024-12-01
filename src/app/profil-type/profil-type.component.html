@@ -14,12 +14,13 @@
       class="card"
       *ngFor="let item of items; let i = index"
       [ngClass]="i % 2 === 0 ? 'card-blue' : 'card-red'"
+      [routerLink]="item.route" 
     >
       <img [src]="item.image" alt="image">
       <div class="card-content">
         <h3>{{ item.title }}</h3>
         <p>{{ item.description }}</p>
-        <a href="#" class="learn-more">En savoir plus →</a>
+        <a [routerLink]="item.route" class="learn-more">En savoir plus →</a> <!-- Lien vers la page -->
       </div>
     </div>
   </div>
@@ -41,5 +42,4 @@
       <i class="fas fa-arrow-right"></i>
     </button>
   </div>
-  
 </div>
