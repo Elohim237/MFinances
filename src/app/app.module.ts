@@ -16,6 +16,7 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { AboutComponent } from './about/about.component';
 import { HeaderAboutComponent } from './header-about/header-about.component';
 import { AbslComponent } from './absl/absl.component';
+import { ProfilIndependantComponent } from './profil-independant/profil-independant.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { AbslComponent } from './absl/absl.component';
     AccueilComponent,
     AboutComponent,
     HeaderAboutComponent,
-    AbslComponent
+    AbslComponent,
+    ProfilIndependantComponent
   ],
   imports: [
     BrowserModule,

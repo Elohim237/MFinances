@@ -10,7 +10,7 @@ export class ProfilTypeComponent {
 
   items = [
     { image: 'https://www.indy.fr/wp-content/uploads/slider-freelance-1.png', title: 'ABSL', description: 'Les Associations Sans But Lucratif en Belgique sont des structures incontournables pour porter des projets sociaux, culturels, éducatifs ou environnementaux...',route: '/absl' },
-    { image: 'https://www.indy.fr/wp-content/uploads/pro-sante.png', title: 'Indépendant et Startup', description: 'Médecin, IDEL, dentiste, sage-femme...',route: '/independant-startup' },
+    { image: 'https://www.indy.fr/wp-content/uploads/pro-sante.png', title: 'Indépendant et Startup', description: 'Médecin, IDEL, dentiste, sage-femme...',route: '/profil-independant' },
     { image: 'https://www.indy.fr/wp-content/uploads/reeduc.png', title: 'Sociétés commerciales', description: 'Kinésithérapeute, orthophoniste, podologue...',route: '/independant-startup' },
     { image: 'https://www.indy.fr/wp-content/uploads/reeduc.png', title: 'Société', description: 'Gérant de SAS, SASU, SARL, EURL',route: '/independant-startup' },
     { image: 'https://www.indy.fr/wp-content/uploads/reeduc.png', title: 'Commerçant', description: 'Coiffeur, fleuriste, vendeur, e-commerçant...',route: '/independant-startup' },
