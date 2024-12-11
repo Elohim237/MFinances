@@ -1,0 +1,468 @@
+<style>
+    .custom-card {
+        border: 2px solid #e6e9f1; 
+        border-radius: 12px; 
+        background-color: #f8f9fb; 
+        padding: 20px; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%; 
+    }
+
+    .icon-wrapper {
+        min-width: 80px;
+        min-height: 80px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .icon-wrapper img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .custom-image-size {
+    width: 70%; /* Ajustez la largeur maximale (en pourcentage ou pixels) */
+    height: auto; /* Maintient le ratio d'aspect */
+    }
+    .second-card {
+        position: relative;
+    }
+
+    @media (min-width: 992px) {
+        .second-card {
+            left: -64px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .second-card {
+            left: 0;
+        }
+    }
+
+    .color-red, i {
+        color: #FF3333;
+    }
+
+    .bg-custom--primary {
+        background-color: #00204A;
+    }
+
+    .bg-custom--primary p,
+    .bg-custom--primary ul,
+    .bg-custom--primary h1,
+    .bg-custom--primary h2 {
+        color: white;
+    }
+
+    .rectangle-red {
+        background-color: #FF3333;
+        border-radius: 8px;
+        padding: 6px;
+    }
+
+    .hadding h1 {
+        color: white;
+        font-size: 29px !important;
+        line-height: 48px;
+        padding-bottom: 18px;
+    }
+
+    .highlighted {
+        background-color: #ff4136;
+        color: #fff;
+        padding: 0.2rem 0.5rem;
+        border-radius: 0.25rem;
+    }
+
+    .vertical-divider {
+        border-left: 1px solid #d1d1d1;
+        height: 100%;
+    }
+
+    .icon-red {
+        color: #ff4136;
+        font-size: 1.5rem;
+        margin-right: 1rem; 
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+
+    .flex-content {
+        display: flex;
+        align-items: flex-start; 
+        margin-bottom: 1rem;
+    }
+
+    .section-content h5 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .section-content ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .header {
+        background: url('../../assets/img/bg/bg_about.png') no-repeat center center/cover;
+        min-height: 300px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-overlay {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+
+    /* Media queries pour adapter sur plus petits écrans */
+    @media (max-width: 767px) {
+        .hadding h1 {
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+        .custom-card {
+            padding: 15px;
+        }
+
+        .icon-wrapper {
+            min-width: 60px;
+            min-height: 60px;
+        }
+
+        .works-items h2 {
+            font-size: 1.2rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media (max-width: 575px) {
+        .hadding h1 {
+            font-size: 20px;
+            line-height: 32px;
+        }
+    }
+</style>
+
+<header class="header">
+    <div class="header-overlay">
+        <div class="container">
+            <h1>Société de Management Patrimoniale</h1>
+            <p class="text-white">Accueil &gt; Société de Management Patrimoniale</p>
+        </div>
+    </div>
+</header>
+
+<section>
+  <div class="about sec-padding">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6" data-aos="fade-right" data-aos-duration="800">
+          <div class="about-img img-border">
+            <img src="../../assets/img/image/about-07.png" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md-6 space-sm-30" data-aos="fade-left" data-aos-duration="800">
+          <div class="about-haddings">
+            <div class="hadding hadding-p">
+                <p class="text-red">
+                    <span class="text-red">Pourquoi collaborer avec nous ?</span>
+                </p>
+              <h3>En choisissant MFINANCES, vous bénéficiez de</h3>
+            </div>
+            <div>
+              <div class="row">
+                <div>
+                    <p>Face à une fiscalité lourde et des revenus souvent sous-optimisés, les dirigeants d’entreprise cherchent des solutions innovantes pour structurer leurs finances. La Société de Management Patrimoniale répond à ces enjeux en combinant optimisation fiscale et valorisation du patrimoine.</p>
+                    <p>La Société de Management Patrimoniale permet au dirigeant d’entreprise de facturer ses prestations à sa société d’exploitation tout en optimisant la gestion et la valorisation de son patrimoine personnel.</p>
+                    <p>En évitant les modes de rémunération classiques, souvent taxés jusqu’à 55 % (impôts et cotisations sociales incluses), elle offre une solution stratégique pour :</p>     
+                </div>
+                <div>
+                    <div class="p-3 border-start border-4 border-danger chek-list-all">
+                        <div class="chek-list align-items-baseline gap-3 d-flex mb-2">
+                            <i class="fa fa-star"></i> 
+                            <p class="mb-0">Optimiser la rémunération du dirigeant par des management fees déductibles.</p>
+                        </div>    
+                        <div class="chek-list align-items-baseline gap-3 d-flex">
+                            <i class="fa fa-star"></i> 
+                            <p class="mb-0">Accroître la richesse patrimoniale, en réinvestissant ces revenus dans des actifs durables (immobilier, placements financiers, etc.).</p>
+                        </div>    
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-custom--primary">
+    <div class="works sec-padding">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-12 col-lg-6">
+              <div class="how-in-work-sec">
+                <div class="hadding hadding-p" data-aos="fade-right" data-aos-duration="800">
+                  <h1>Les Besoins spécifiques des Sociétés de Management <span class="rectangle-red">Patrimoniales</span></h1>
+                </div>
+                <div class="space20"></div>
+                <div class="works-items">
+                  <div class="work-item d-flex align-items-baseline" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="me-3">
+                      <div class="work-icon img-border">
+                        <img src="../../assets/img/image/profil/works-icon-1.png" alt="" class="img-fluid">
+                      </div>
+                    </div>
+                    <div class="hadding hadding-p">
+                      <h2>Planification fiscale continue</h2>
+                      <ul>
+                        <li><strong>Fiscale proactive :</strong> Intégration des ajustements nécessaires pour s’adapter aux évolutions légales et économiques.</li>
+                        <li><strong>Maximisation des déductions fiscales :</strong> Réduction stratégique de la base imposable pour préserver la trésorerie.</li>
+                      </ul>
+                    </div>
+                  </div>
+      
+                  <div class="work-item d-flex align-items-baseline" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="me-3">
+                      <div class="work-icon">
+                        <img src="../../assets/img/image/profil/works-icon-2.png" alt="" class="img-fluid">
+                      </div>
+                    </div>
+                    <div class="hadding hadding-p">
+                      <h2>Surveillance de la rentabilité des investissements patrimoniaux</h2>
+                      <ul>
+                        <li><strong>Évaluation continue :</strong> Suivi des performances des actifs patrimoniaux pour en maximiser le rendement.</li>
+                        <li><strong>Tableaux de bord financiers :</strong> Analyse en temps réel pour identifier les opportunités de diversification.</li>
+                      </ul>
+                    </div>
+                  </div>
+      
+                  <div class="work-item d-flex align-items-baseline" data-aos="fade-right" data-aos-duration="1400">
+                    <div class="me-3">
+                      <div class="work-icon">
+                        <img src="../../assets/img/image/profil/works-icon-3.png" alt="" class="img-fluid">
+                      </div>
+                    </div>
+                    <div class="hadding hadding-p">
+                      <h2>Documentation des management fees pour garantir leur déductibilité</h2>
+                      <ul>
+                        <li><strong>Justification des prestations :</strong> Contrats, rapports et factures claires démontrant l’utilité des services rendus.</li>
+                        <li><strong>Conformité fiscale :</strong> Conservation rigoureuse des documents pour les contrôles éventuels.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="work-item d-flex align-items-baseline" data-aos="fade-right" data-aos-duration="1400">
+                    <div class="me-3">
+                      <div class="work-icon">
+                        <img src="../../assets/img/image/profil/about-vision-icon-2.png" alt="" class="img-fluid">
+                      </div>
+                    </div>
+                    <div class="hadding hadding-p">
+                      <h2>Une gestion comptable et financière rigoureuse</h2>
+                      <ul>
+                        <li><strong>Bilans intermédiaires :</strong> Suivi précis de l’évolution financière pour justifier la solidité de la structure.</li>
+                        <li><strong>Conformité fiscale :</strong> Conservation rigoureuse des documents pour répondre aux contrôles.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-12 col-lg-6" data-aos="flip-right" data-aos-duration="1000">
+              <div class="works-img space-sm-50 img-border">
+                <img src="../../assets/img/image/profil/works.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Colonne gauche (texte) -->
+        <div class="col-12 col-md-6 mb-4" data-aos="fade-right">
+          <h2 class="display-5 fw-bold">
+            Les fonctions clés de la Société de Management 
+            <span class="bg-danger text-white px-2 rounded">Patrimoniale</span>
+          </h2>
+          <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+  
+        <!-- Colonne droite (cartes) -->
+        <div class="col-12 col-md-6 d-flex flex-column gap-4">
+          <!-- Carte 1 -->
+          <div class="custom-card p-4 d-flex align-items-start" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-wrapper me-3 d-flex justify-content-center align-items-center">
+              <img src="../../assets/img/image/profil/Background+Border.png" alt="Icone Facturer" class="img-fluid" style="max-width: 50px;">
+            </div>
+            <div>
+              <h5 class="fw-semibold mb-2">Facturer des prestations à la société d’exploitation</h5>
+              <p class="mb-0 text-muted">Services de gestion ou de conseil stratégique facturés sous forme de management fees déductibles.</p>
+            </div>
+          </div>
+  
+          <!-- Carte 2 -->
+          <div class="custom-card p-4 d-flex align-items-start second-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon-wrapper me-3 d-flex justify-content-center align-items-center">
+              <img src="../../assets/img/image/profil/Background+Border2.png" alt="Icone Patrimoine" class="img-fluid" style="max-width: 50px;">
+            </div>
+            <div>
+              <h5 class="fw-semibold mb-2">Accroître et protéger le patrimoine personnel</h5>
+              <p class="mb-0 text-muted">Revenus réinvestis dans des projets immobiliers ou financiers à long terme.</p>
+            </div>
+          </div>
+  
+          <!-- Carte 3 -->
+          <div class="custom-card p-4 d-flex align-items-start" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon-wrapper me-3 d-flex justify-content-center align-items-center">
+              <img src="../../assets/img/image/profil/Background+Border3.png" alt="Icone Risques" class="img-fluid" style="max-width: 50px;">
+            </div>
+            <div>
+              <h5 class="fw-semibold mb-2">Séparer les risques</h5>
+              <p class="mb-0 text-muted">Protection du patrimoine personnel contre les aléas de l’activité professionnelle.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<app-timeline-patrimoniale></app-timeline-patrimoniale>
+
+<div class="container py-5">
+    <div class="text-center mb-5" data-aos="fade-down">
+      <h1 class="section-title">
+        Pourquoi choisir <span class="highlighted">MFINANCES</span> pour votre<br>
+        Société de Management Patrimoniale ?
+      </h1>
+    </div>
+  
+    <div class="row align-items-start">
+      <!-- Colonne gauche -->
+      <div class="col-md-5 section-content" data-aos="fade-right" data-aos-delay="200">
+        <h5>Une expertise adaptée à vos besoins</h5>
+        <ul>
+          <li class="flex-content" data-aos="fade-up" data-aos-delay="300">
+            <i class="fas fa-check-circle icon-red"></i>
+            <span>Structuration fiscale et comptable.</span>
+          </li>
+          <li class="flex-content" data-aos="fade-up" data-aos-delay="400">
+            <i class="fas fa-check-circle icon-red"></i>
+            <span>Gestion patrimoniale intégrée.</span>
+          </li>
+          <li class="flex-content" data-aos="fade-up" data-aos-delay="500">
+            <i class="fas fa-check-circle icon-red"></i>
+            <span>Planification successorale sur mesure.</span>
+          </li>
+        </ul>
+      </div>
+  
+      <!-- Colonne centrale avec icône étoile -->
+      <div
+        class="col-md-2 text-center d-flex flex-column align-items-center mb-4 mb-md-0"
+        data-aos="zoom-in"
+        data-aos-delay="600"
+      >
+        <div>
+          <i class="fas fa-star icon-red"></i>
+        </div>
+        <div class="vertical-divider mx-auto d-none d-md-block mt-3"></div>
+      </div>
+  
+      <!-- Colonne droite -->
+      <div class="col-md-5 section-content d-flex " data-aos="fade-left" data-aos-delay="200">
+        <div>
+            <h5>Une solution clé en main</h5>
+        <ul>
+          <li class="flex-content" data-aos="fade-up" data-aos-delay="300">
+            <i class="fas fa-check-circle icon-red"></i>
+            <span>Création et gestion de votre Société de Management Patrimoniale.</span>
+          </li>
+          <li class="flex-content" data-aos="fade-up" data-aos-delay="400">
+            <i class="fas fa-check-circle icon-red"></i>
+            <span>Mise en place de tableaux de bord personnalisés.</span>
+          </li>
+          <li class="flex-content" data-aos="fade-up" data-aos-delay="500">
+            <i class="fas fa-check-circle icon-red"></i>
+            <span>Accompagnement fiscal et patrimonial à chaque étape.</span>
+          </li>
+        </ul>
+        </div>
+        <div>
+            <i class="fas fa-search icon-red"></i>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+
+<section class="container my-5">
+    <div class="rounded-4 bg-custom--primary text-white px-4">
+      <div class="row align-items-center">
+        <!-- Image visible uniquement à partir du md (desktop) -->
+        <div 
+          class="col-md-6 d-none d-md-flex justify-content-center align-items-end" 
+          data-aos="fade-left" 
+          data-aos-delay="200"
+        >
+          <img
+            src="../../assets/img/image/profil/h9_footer_banner_img 1 1.png"
+            alt="Personne souriante"
+            class="img-fluid custom-image-size"
+            style="z-index: 2; position: relative;"
+          />
+        </div>
+  
+        <!-- Texte et bouton, centrés sur mobile/tablette -->
+        <div 
+          class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start mt-4 mt-md-0"
+          data-aos="fade-right"
+          data-aos-delay="400"
+        >
+          <h2 class="fw-bold mb-4">
+            Transformez vos revenus professionnels en patrimoine durable grâce à une Société de <br>
+            <span class="bg-danger text-white px-2 py-1 rounded-2">Management Patrimoniale</span>.
+          </h2>
+          <p class="mb-4" data-aos="fade-up" data-aos-delay="600">
+            Contactez MFINANCES dès aujourd’hui pour bénéficier d’un accompagnement sur mesure et découvrir comment réduire vos charges fiscales dès maintenant.
+          </p>
+          <a 
+            href="#" 
+            class="btn btn-danger btn-sm px-3 py-2" 
+            data-aos="zoom-in" 
+            data-aos-delay="800"
+          >
+            Contactez-nous <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  

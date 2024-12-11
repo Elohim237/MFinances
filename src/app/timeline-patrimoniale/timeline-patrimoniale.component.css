@@ -1,0 +1,119 @@
+body {
+    background-color: #001f3f;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .highlighted {
+    background-color: #ff4136;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.25rem;
+  }
+
+  .steps-container {
+    position: relative;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  /* Ligne horizontale avec pointillés */
+  .steps-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: 2px dashed #fff;
+    opacity: 0.5;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+
+  .step {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding: 2rem 0;
+  }
+
+  .step-number {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+
+  .step-dot {
+    width: 12px;
+    height: 12px;
+    background: #ff4136;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+
+  .step-text {
+    font-size: 0.9rem;
+    max-width: 200px;
+    margin: 2rem auto 0; /* Plus d'espace au-dessus du texte */
+    padding-top: 32px;
+  }
+
+
+
+  .result-custom span {
+    color: #ff4136;
+    font-weight: 700;
+  }
+
+  @media (max-width: 767px) {
+    .steps-line {
+      display: none;
+    }
+
+    .step-dot {
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+      margin: 1rem auto;
+    }
+
+    .step-text {
+      margin-top: 2rem; /* Peut être ajusté si nécessaire sur mobile */
+    }
+  }
+
+  .bg-custom--primary{
+    background-color: #00204A;
+    color: white;
+}
+
+.result-section {
+    display: flex;
+    align-items: center; /* Aligner verticalement */
+    justify-content: center; /* Centrer horizontalement */
+    margin-top: 2rem; /* Espacement au-dessus */
+  }
+
+  .result-border {
+    border-left: 4px solid #ff4136; /* Bordure verticale (couleur rouge) */
+    padding-left: 1rem; /* Espace entre la bordure et le texte */
+  }
+
+  .result-text {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .result-text span {
+    color: #ff4136;
+    font-weight: 700;
+  }
+
+  

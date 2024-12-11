@@ -17,6 +17,8 @@ import { AboutComponent } from './about/about.component';
 import { HeaderAboutComponent } from './header-about/header-about.component';
 import { AbslComponent } from './absl/absl.component';
 import { ProfilIndependantComponent } from './profil-independant/profil-independant.component';
+import { ProfilSocieteManagementPatrimonialeComponent } from './profil-societe-management-patrimoniale/profil-societe-management-patrimoniale.component';
+import { TimelinePatrimonialeComponent } from './timeline-patrimoniale/timeline-patrimoniale.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { ProfilIndependantComponent } from './profil-independant/profil-independ
     AboutComponent,
     HeaderAboutComponent,
     AbslComponent,
-    ProfilIndependantComponent
+    ProfilIndependantComponent,
+    ProfilSocieteManagementPatrimonialeComponent,
+    TimelinePatrimonialeComponent
   ],
   imports: [
     BrowserModule,
