@@ -19,6 +19,8 @@ import { AbslComponent } from './absl/absl.component';
 import { ProfilIndependantComponent } from './profil-independant/profil-independant.component';
 import { ProfilSocieteManagementPatrimonialeComponent } from './profil-societe-management-patrimoniale/profil-societe-management-patrimoniale.component';
 import { TimelinePatrimonialeComponent } from './timeline-patrimoniale/timeline-patrimoniale.component';
+import { RecommandationProfilComponent } from './recommandation-profil/recommandation-profil.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { TimelinePatrimonialeComponent } from './timeline-patrimoniale/timeline-
     AbslComponent,
     ProfilIndependantComponent,
     ProfilSocieteManagementPatrimonialeComponent,
-    TimelinePatrimonialeComponent
+    TimelinePatrimonialeComponent,
+    RecommandationProfilComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,

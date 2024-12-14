@@ -1,0 +1,148 @@
+/*.card{*/
+/*    width: 230px;*/
+/*}*/
+
+/*.card-body {*/
+/*    color: #004865;*/
+/*}*/
+/*.card-body h5 {*/
+/*    font-weight: 600;*/
+/*}*/
+/*.card-body{*/
+/*    background-color: #EDF1F5;*/
+/*}*/
+/*.card-body a{*/
+/*    color: #ff0000;;*/
+/*}*/
+/*.custom-shadow {*/
+/*    box-shadow: 4px 4px 0px rgba(0, 72, 101, 1);*/
+/*  }*/
+
+/* Container principal du slider */
+.slider-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .slider-container h2 {
+    font-size: 24px;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  
+  /* Slider */
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Carte individuelle */
+  .card {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 350px;
+    margin: 0 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 4px 5px 1px rgba(0, 72, 101, 1);
+    background: #EDF1F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .card-content h3 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: #1a1a1a;
+  }
+  
+  .card-content p {
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 15px;
+  }
+  
+  .card-content .learn-more {
+    font-size: 14px;
+    color: #ff4c4c;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .card-content .learn-more:hover {
+    color: #e04343;
+  }
+  
+  /* Boutons de navigation */
+  .navigation-buttons {
+    display: flex;
+    gap: 1rem; /* Espacement entre les boutons */
+    justify-content: center; /* Centre les boutons horizontalement */
+    align-items: center; /* Centre les boutons verticalement */
+    margin-top: 32px;
+  }
+  
+  .nav-btn {
+    border: 2px solid #25335B; /* Bordure circulaire */
+    background: none; /* Pas de fond */
+    border-radius: 50%; /* Forme circulaire */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .nav-btn i {
+    color: #25335B; /* Couleur de l'icône */
+    font-size: 20px;
+  }
+  
+  .nav-btn:hover {
+    background-color: rgba(37, 51, 91, 0.1); /* Fond léger au survol */
+    transform: scale(1.1); /* Agrandir légèrement au survol */
+  }
+  
+  .nav-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; /* Diminuer l'opacité pour les boutons désactivés */
+  }
+  
+  .nav-btn:disabled i {
+    color: rgba(37, 51, 91, 0.5); /* Couleur atténuée pour les icônes désactivées */
+  }
+  
+  .text-red {
+    color: #ff0000; /* Rouge vif */
+    font-style: italic;
+    margin-bottom: 0px;
+  }
+  /* Carte en bleu */
+  .card-blue {
+    box-shadow: 4px 5px 1px rgba(0, 72, 101, 1);
+    background-color: #EDF1F5;
+  }
+  
+  /* Carte en rouge */
+  .card-red {
+    box-shadow: 4px 5px 1px rgba(255, 0, 0, 1);
+    background-color: #EDF1F5;
+  }
+  

@@ -1,0 +1,46 @@
+<div class="slider-container py-5">
+  <div class="row">
+    <div class="col-md-6 m-auto text-center">
+      <div class="hadding hadding-p">
+        <p class="text-red">
+          <span class="text-red"> Voir plus de profil</span>
+        </p>
+        <h1>Consulter nos autres profil</h1>
+      </div>
+    </div>
+  </div>
+  <!-- Slider -->
+  <div class="slider" [style.transform]="getTransform()">
+    <div
+      class="card"
+      *ngFor="let item of filteredItems; let i = index"
+      [ngClass]="i % 2 === 0 ? 'card-blue' : 'card-red'"
+      [routerLink]="item.route"
+    >
+      <img [src]="item.image" alt="image">
+      <div class="card-content">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.description }}</p>
+        <a [routerLink]="item.route" class="learn-more">En savoir plus →</a>
+      </div>
+    </div>
+  </div>
+  <!-- Navigation buttons -->
+  <div class="navigation-buttons">
+    <!-- Bouton précédent -->
+    <button 
+      class="nav-btn" 
+      (click)="prevSlide()" 
+      [disabled]="currentIndex === 0">
+      <i class="fas fa-arrow-left"></i>
+    </button>
+  
+    <!-- Bouton suivant -->
+    <button 
+      class="nav-btn" 
+      (click)="nextSlide()" 
+      [disabled]="currentIndex === filteredItems.length - 1">
+      <i class="fas fa-arrow-right"></i>
+    </button>
+  </div>
+</div>
