@@ -21,6 +21,7 @@ import { ProfilSocieteManagementPatrimonialeComponent } from './profil-societe-m
 import { TimelinePatrimonialeComponent } from './timeline-patrimoniale/timeline-patrimoniale.component';
 import { RecommandationProfilComponent } from './recommandation-profil/recommandation-profil.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { TimelineIndependantComponent } from './timeline-independant/timeline-independant.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     ProfilSocieteManagementPatrimonialeComponent,
     TimelinePatrimonialeComponent,
     RecommandationProfilComponent,
-    SidebarComponent
+    SidebarComponent,
+    TimelineIndependantComponent
   ],
   imports: [
     BrowserModule,
